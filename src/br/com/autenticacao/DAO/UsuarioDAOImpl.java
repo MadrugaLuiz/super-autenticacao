@@ -1,3 +1,4 @@
+package br.com.autenticacao.DAO;
 import java.util.List;
 
 import br.com.autenticacaoModel.Usuario;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class usuarioDAOImpl implements GenericDAO {
+public class UsuarioDAOImpl implements GenericDAO {
 
 	// para implementar alguma coisa
 
@@ -18,7 +19,7 @@ public class usuarioDAOImpl implements GenericDAO {
 	// Construtor vazio da classe ProdutoDAOImpl, iniciando a conexão com o banco
 	// de dados atráves da classe ConnectionFactory
 
-	public usuarioDAOImpl() throws Exception {
+	public UsuarioDAOImpl() throws Exception {
 		try {
 			this.conn = ConnectionFactory.getConnection();
 		} catch (Exception e) {
