@@ -49,7 +49,7 @@ public class UsuarioController {
 			return true;
 
 		} catch (Exception e) {
-			System.out.println("Problemas no Controler para cadastrar produto" + e.getLocalizedMessage());
+			System.out.println("Problemas no Controler para cadastrar produto" + e.getMessage());
 			e.printStackTrace();
 			return false;
 		}

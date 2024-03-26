@@ -1,4 +1,5 @@
 package br.com.autenticacao.DAO;
+
 import java.util.List;
 
 import br.com.autenticacaoModel.Usuario;
@@ -99,7 +100,7 @@ public class UsuarioDAOImpl implements GenericDAO {
 	public boolean cadastrar(Object object) {
 		Usuario usuario = (Usuario) object;
 		PreparedStatement stmt = null;
-		String sql = "INSERT INTO usuario (nome,email, senha, isAtivo) VALUES (?,?,?,?)";
+		String sql = "INSERT INTO usuario (nome,email, senha, isAtivo) VALUES (?,?,MD5(?),?)";
 
 		try {
 			stmt = conn.prepareStatement(sql);
