@@ -2,8 +2,9 @@ package br.com.autenticacao.DAO;
 
 import java.util.List;
 
-import br.com.autenticacaoModel.Usuario;
-import br.com.autenticacaoUtil.ConnectionFactory;
+import br.com.autenticacao.Model.Usuario;
+import br.com.autenticacao.Util.ConnectionFactory;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

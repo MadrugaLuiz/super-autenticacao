@@ -1,4 +1,4 @@
-package br.com.autenticacaoUtil;
+package br.com.autenticacao.Util;
 
 import java.sql.Statement;
 import java.sql.Connection;

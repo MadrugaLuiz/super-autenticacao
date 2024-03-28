@@ -1,4 +1,4 @@
-package br.com.autenticacaoModel;
+package br.com.autenticacao.Model;
 
 public class Usuario {
 

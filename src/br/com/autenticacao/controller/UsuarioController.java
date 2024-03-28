@@ -5,7 +5,7 @@ import java.util.List;
 
 import br.com.autenticacao.DAO.GenericDAO;
 import br.com.autenticacao.DAO.UsuarioDAOImpl;
-import br.com.autenticacaoModel.Usuario;
+import br.com.autenticacao.Model.Usuario;
 
 public class UsuarioController {
 
@@ -21,7 +21,7 @@ public class UsuarioController {
 			return lista;
 
 		} catch (Exception ex) {
-			System.out.println("Problemas na controller para listar Produtos" + ex.getMessage());
+			System.out.println("Problemas na controller para listar Usuario" + ex.getMessage());
 			ex.printStackTrace();
 			return null;
 		}
@@ -31,37 +31,37 @@ public class UsuarioController {
 	public Usuario listarPorId(int id) {
 		try {
 			GenericDAO dao = new UsuarioDAOImpl();
-			Usuario produto = (Usuario) dao.listarPorId(id);
-			return produto;
+			Usuario usuario = (Usuario) dao.listarPorId(id);
+			return usuario;
 
 		} catch (Exception e) {
-			System.out.println("Problemas na Controller para listar Produtos" + e.getMessage());
+			System.out.println("Problemas na Controller para listar Usuário" + e.getMessage());
 			e.printStackTrace();
 			return null;
 
 		}
 	}
 
-	public boolean cadastrar(Usuario produto) {
+	public boolean cadastrar(Usuario usuario) {
 		try {
 			GenericDAO dao = new UsuarioDAOImpl();
-			dao.cadastrar(produto);
+			dao.cadastrar(usuario);
 			return true;
 
 		} catch (Exception e) {
-			System.out.println("Problemas no Controler para cadastrar produto" + e.getMessage());
+			System.out.println("Problemas no Controler para cadastrar usuario" + e.getMessage());
 			e.printStackTrace();
 			return false;
 		}
 	}
 
-	public boolean alterar(Usuario produto) {
+	public boolean alterar(Usuario usuario) {
 		try {
 			GenericDAO dao = new UsuarioDAOImpl();
-			dao.alterar(produto);
+			dao.alterar(usuario);
 			return true;
 		} catch (Exception e) {
-			System.out.println("Problemas na Controller para alterar Produto" + e.getMessage());
+			System.out.println("Problemas na Controller para alterar usuario" + e.getMessage());
 			e.printStackTrace();
 			return false;
 		}
@@ -72,7 +72,7 @@ public class UsuarioController {
 			GenericDAO dao = new UsuarioDAOImpl();
 			dao.excluir(id);
 		} catch (Exception e) {
-			System.out.println("Problemas na Controller para excliur Produto" + e.getMessage());
+			System.out.println("Problemas na Controller para excliur usuario" + e.getMessage());
 			e.printStackTrace();
 
 		}

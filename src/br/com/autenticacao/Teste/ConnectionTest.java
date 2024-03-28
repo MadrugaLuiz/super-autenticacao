@@ -1,8 +1,8 @@
-package br.com.autenticacaoTeste;
+package br.com.autenticacao.Teste;
 
 import java.sql.Connection;
 
-import br.com.autenticacaoUtil.ConnectionFactory;
+import br.com.autenticacao.Util.ConnectionFactory;
 
 
 
